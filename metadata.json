@@ -1,0 +1,9 @@
+{
+  "name": "Social Garden",
+  "description": "Une application d'intelligence émotionnelle qui cultive vos relations humaines.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "display-capture"
+  ]
+}

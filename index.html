@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Garden</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage: {
+                50: '#f4f7f5',
+                100: '#e3ebe5',
+                200: '#c5d8cc',
+                300: '#9dbfae',
+                400: '#74a08c',
+                500: '#528370',
+                600: '#3e6858',
+                700: '#345448',
+                800: '#2b443b',
+                900: '#243932',
+              },
+              terra: {
+                50: '#fdf8f6',
+                100: '#fcefe9',
+                200: '#f8dcd0',
+                300: '#f2bfaa',
+                400: '#ea9d7e',
+                500: '#e07a56',
+                600: '#d25f3e',
+                700: '#af492f',
+                800: '#8f3d2b',
+                900: '#743527',
+              },
+              cream: '#FDFCF8',
+            },
+            fontFamily: {
+              sans: ['Helvetica Neue', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'grow': 'grow 1s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              grow: {
+                '0%': { transform: 'scale(0) translateY(100%)', opacity: '0' },
+                '100%': { transform: 'scale(1) translateY(0)', opacity: '1' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #FDFCF8; /* Cream */
+        color: #2b443b; /* Sage 800 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
